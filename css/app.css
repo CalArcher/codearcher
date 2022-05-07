@@ -199,6 +199,12 @@ main, .linkTree {
     border-radius: 1em;
 }
 
+@media only screen and (max-width: 600px) {
+    .modularCard {
+        border-radius: 15px;
+    }
+}
+
 .modularCard.withLinks {
     padding-inline: 0;
     transition: transform 0.1s ease-in-out, filter 0.1s ease-in-out;
