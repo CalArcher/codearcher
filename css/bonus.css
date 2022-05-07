@@ -1,0 +1,23 @@
+.mainTextBox {
+    position: absolute;
+    display: none;
+    padding: 0.5em 0.75em;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    text-align: right;
+    background: var(--mainGradient);
+    transform-origin: 100% 100%;
+    transform: rotate(5deg) translate(-100%, -100%);
+    top: 22%;
+    left: 38%;
+    /*width: fit-content;*/
+    /*max-width: 90%;*/
+    opacity: 0;
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.25s ease;
+}
+
+.mainIconContainer:hover .mainTextBox, .mainIconContainer:active .mainTextBox {
+    opacity: 1;
+}

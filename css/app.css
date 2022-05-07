@@ -1,0 +1,487 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    font-family: system-ui, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+
+body, .fullScreenOverlay {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: var(--mainGradient);
+    position: fixed;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    flex-direction: column;
+}
+
+.fullScreenOverlay {
+    background: #0002;
+}
+
+
+
+button, input {
+    font: inherit;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin-block: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    margin-block: 1rem;
+}
+
+main h2 {
+    font-size: 1.75rem;
+    padding-top: 1.5rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:visited {
+    color: inherit;
+}
+
+main, .linkTree {
+    width: 100%;
+    height: 100%;
+    max-width: 74rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.linkTree {
+    width: unset;
+    height: unset;
+}
+
+#header{
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    width: 100%;
+    padding: 1rem, 0, .75rem, 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 102px;
+    height: 90px;
+}
+
+.desktopNav {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+}
+
+.desktopNav a {
+    padding: 0.75rem;
+}
+
+.desktopNav a:hover{
+    display: block;
+    line-height: 1.2em;
+    font-size: 1em;
+    color: transparent;
+    background: var(--textGradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.actionButton {
+    margin-right: .75rem;
+    padding: .45rem 0;
+    font-weight: 600;
+    background: none;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-width: 4px;
+    border-color: #da60ff;
+}
+.actionButton:hover{
+    border-color: #25baff;
+    border-width: 5px;
+}
+
+#emailButton{
+    padding: 0;
+    font-size: 1.35em;
+    margin-top: 2rem;
+}
+
+#emailButton:hover{
+    line-height: 1.2em;
+    font-size: 1.35em;
+    color: transparent;
+    background: var(--textGradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.mainIconContainer {
+    position: relative;
+    margin-block: 3rem;
+    z-index: 0;
+}
+
+.mainIcon {
+    cursor: pointer;
+    width: 20rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mainBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rotatingTextOuter {
+    height: 1.2em;
+    font-size: 1.2em;
+    overflow-y: hidden;
+    position: relative;
+    display: block;
+    width: 100%;
+    /*overflow-x: visible;*/
+}
+
+.rotatingTextOverlay {
+    font-size: 1em;
+    position: absolute;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modularCard {
+    padding-inline: 1em;
+    border-radius: 1em;
+}
+
+.modularCard.withLinks {
+    padding-inline: 0;
+    transition: transform 0.1s ease-in-out, filter 0.1s ease-in-out;
+}
+
+.modularCard.withLinks:hover {
+    transform: scale(1.03);
+    filter: brightness(1.05);
+}
+
+.modularCard.withLinks > a {
+    /* A rather cool hack. If you don't do something special, it's just display block with no collapse.*/
+    display: table;
+    padding-inline: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+.modularCard h3 {
+    margin-block: 1em;
+}
+
+.modularCard ul {
+    margin-block: 1em;
+}
+
+.modularCard img {
+    width: 100%;
+    margin-block: 1em;
+    border-radius: 1em;
+}
+
+
+.servicesList, .projectList, .proficiencyList, .cssArtList, .illustrationList, .links {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.servicesList img {
+    width: 40%;
+    display: block;
+    aspect-ratio: 1/1;
+    max-width: 5rem;
+    /*margin-inline: auto;*/
+}
+
+.projectTags {
+    display: flex;
+    gap: 0.5em;
+    flex-flow: wrap;
+    font-size: 1em;
+}
+
+.projectTags li {
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+
+.rotatingTextInner {
+    display: block;
+    line-height: 1.2em;
+    font-size: 1em;
+    color: transparent;
+    background: var(--textGradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.proficiencyCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    max-width: 8rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.proficiencyList {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.proficiencyCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 0.5rem;
+    max-width: 5rem;
+    margin-block: 0;
+}
+
+.liCont span{
+    padding-top: .65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#htmlParent:hover ~ #htmlSkill{ visibility: visible; }
+#htmlParent:hover{ outline: 3px solid rgb(236, 86, 45); }
+#htmlSkill{ visibility: hidden; } 
+
+#cssParent:hover ~ #cssSkill{ visibility: visible; }
+#cssParent:hover{ outline: 3px solid rgb(28, 96, 235); }
+#cssSkill{ visibility: hidden; } 
+
+#jsParent:hover ~ #jsSkill{ visibility: visible; }
+#jsParent:hover{ outline: 3px solid rgb(247, 216, 49); }
+#jsSkill{ visibility: hidden; } 
+
+#nodejsParent:hover ~ #nodejsSkill{ visibility: visible; }
+#nodejsParent:hover{ outline: 3px solid rgb(78, 147, 63); }
+#nodejsSkill{ visibility: hidden; } 
+
+#mongodbParent:hover ~ #mongodbSkill{ visibility: visible; }
+#mongodbParent:hover{ outline: 3px solid rgb(37, 160, 75); }
+#mongodbSkill{ visibility: hidden; } 
+
+#gitParent:hover ~ #gitSkill{ visibility: visible; }
+#gitParent:hover{ outline: 3px solid rgb(215, 62, 52); }
+#gitSkill{ visibility: hidden; } 
+
+#npmParent:hover ~ #npmSkill{ visibility: visible; }
+#npmParent:hover{ outline: 3px solid rgb(182, 22, 39); }
+#npmSkill{ visibility: hidden; } 
+
+#aiParent:hover ~ #aiSkill{ visibility: visible; }
+#aiParent:hover{ outline: 3px solid rgb(253, 112, 38); }
+#aiSkill{ visibility: hidden; } 
+
+
+.links .modularCard a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+    padding-block: 1em;
+}
+
+.links i {
+    font-size: 2.5em;
+}
+
+.links h3 {
+    margin-block: 0;
+}
+
+.modalNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.5em;
+}
+
+.modalNavbar i {
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0.25em;
+    position: relative;
+    left: 0.25em;
+}
+
+
+/*#linkTreeModal {*/
+/*    display: none;*/
+/*}*/
+
+@media only screen and (max-width: 396px) {
+    .desktopNav{
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+    }
+    .desktopNav a{
+        font-size: 1.25em;
+        font-weight: 600;
+    }
+  }
+
+@media only all and (min-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only all and (min-width: 640px) {
+    .servicesList, .projectList, .cssArtList, .illustrationList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media only all and (min-width: 800px) {
+    body, .fullScreenOverlay {
+        padding: .25rem;
+    }
+    #logo{
+        width: 120px;
+        height: 107px;
+    }
+    #header{
+        width: 80%;
+        padding-bottom: .25rem;
+    }
+
+    .mainBanner {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        column-gap: 2rem;
+        text-align: left;
+    }
+
+    .mainText {
+        flex: 4;
+    }
+    .mainIcon {
+        flex: 2;
+    }
+
+    .rotatingTextOverlay {
+        transform: none;
+        left: 0;
+    }
+
+    .mainIcon {
+        flex: 2;
+        max-width: 20rem;
+        position: relative;
+    }
+
+    .proficiencyList {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+}
+
+@media only all and (min-width: 1024px) {
+    main {
+        padding-inline: 3rem;
+    }
+
+    .servicesList {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cssArtList, .illustrationList, .projectList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media only all and (min-width: 1200px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media only all and (min-width: 1500px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,60 @@
+.glassMorphism {
+    background: rgba( 255, 255, 255, var(--cardTransparency) );
+    box-shadow: 0 8px 30px 0 rgba(31, 119, 135, 0.15);
+    -webkit-backdrop-filter: blur(var(--glassBlur));
+    backdrop-filter: blur(var(--glassBlur));
+}
+
+::-webkit-scrollbar {
+    width: .6rem;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: var(--scrollGradient);
+    border-radius: 10px;
+    margin-right: 2px;
+}
+
+::-webkit-scrollbar-track {
+    padding-right: 5px;
+}
+
+.servicesList img {
+    border-radius: 0;
+}
+
+.nudge {
+    animation: nudge 0.5s ease;
+}
+
+@keyframes nudge {
+    0% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    25% {
+        transform: translateY(-2%) scaleX(0.99);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    75% {
+        transform: translateY(-2%) scaleX(0.99);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+.linkTree {
+    --cardTransparency: 0.95;
+}

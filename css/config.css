@@ -1,0 +1,21 @@
+:root {
+    /*This configures the gradient color of the buttons.*/
+    --mainGradient: linear-gradient(90deg, #70c2fd 0%, #e8c8ff 100%);
+    /*This configures the gradient color of the text. Make it darker.*/
+    --textGradient: linear-gradient(90deg, #b041ff 0%, #2751b4 100%);
+    
+    --scrollGradient: linear-gradient(90deg, #355cb7dd 0%, #c384f0da 100%);
+
+    --ulineGradient: linear-gradient(90deg, #d30101dd 0%, #9300fcda 100%);
+    /*Set the gradient color of the card.*/
+    --cardTransparency: 0.3;
+    /*Configures how much the content behind glass layers blurs. May cause severe performance issues. Comment the line to disable it.*/
+    /*--glassBlur: 0px;*/
+}
+
+/* If your images have different size, this makes your images the same height without stretching or squeezing its contents apart.*/
+.projectList img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+}
