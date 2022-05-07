@@ -197,6 +197,7 @@ main, .linkTree {
 .modularCard {
     padding-inline: 1em;
     border-radius: 1em;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
