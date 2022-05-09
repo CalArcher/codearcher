@@ -17,7 +17,6 @@ body, .fullScreenOverlay {
     background: var(--mainGradient);
     position: fixed;
     display: flex;
-    
     justify-content: center;
     align-items: center;
 }
@@ -376,6 +375,10 @@ main, .linkTree {
     padding: 0.25em;
     position: relative;
     left: 0.25em;
+}
+
+#linkTreeModal{
+    background: rgba(0,0,0,.1);
 }
 
 
