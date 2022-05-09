@@ -309,35 +309,35 @@ main, .linkTree {
 }
 
 #htmlParent:hover ~ #htmlSkill{ visibility: visible; }
-#htmlParent:hover{ outline: 3px solid rgb(236, 86, 45); }
+#htmlParent:hover{ box-shadow: 0 0 0 3px rgb(236, 86, 45);;  }
 #htmlSkill{ visibility: hidden; } 
 
 #cssParent:hover ~ #cssSkill{ visibility: visible; }
-#cssParent:hover{ outline: 3px solid rgb(28, 96, 235); }
+#cssParent:hover{ box-shadow: 0 0 0 3px rgb(28, 96, 235); }
 #cssSkill{ visibility: hidden; } 
 
 #jsParent:hover ~ #jsSkill{ visibility: visible; }
-#jsParent:hover{ outline: 3px solid rgb(247, 216, 49); }
+#jsParent:hover{ box-shadow: 0 0 0 3px rgb(247, 216, 49); }
 #jsSkill{ visibility: hidden; } 
 
 #nodejsParent:hover ~ #nodejsSkill{ visibility: visible; }
-#nodejsParent:hover{ outline: 3px solid rgb(78, 147, 63); }
+#nodejsParent:hover{ box-shadow: 0 0 0 3px rgb(78, 147, 63); }
 #nodejsSkill{ visibility: hidden; } 
 
 #mongodbParent:hover ~ #mongodbSkill{ visibility: visible; }
-#mongodbParent:hover{ outline: 3px solid rgb(37, 160, 75); }
+#mongodbParent:hover{ box-shadow: 0 0 0 3px rgb(37, 160, 75); }
 #mongodbSkill{ visibility: hidden; } 
 
 #gitParent:hover ~ #gitSkill{ visibility: visible; }
-#gitParent:hover{ outline: 3px solid rgb(215, 62, 52); }
+#gitParent:hover{ box-shadow: 0 0 0 3px rgb(215, 62, 52); }
 #gitSkill{ visibility: hidden; } 
 
 #npmParent:hover ~ #npmSkill{ visibility: visible; }
-#npmParent:hover{ outline: 3px solid rgb(182, 22, 39); }
+#npmParent:hover{ box-shadow: 0 0 0 3px rgb(182, 22, 39); }
 #npmSkill{ visibility: hidden; } 
 
 #aiParent:hover ~ #aiSkill{ visibility: visible; }
-#aiParent:hover{ outline: 3px solid rgb(253, 112, 38); }
+#aiParent:hover{ box-shadow: 0 0 0 3px rgb(253, 112, 38); }
 #aiSkill{ visibility: hidden; } 
 
 
@@ -349,9 +349,15 @@ main, .linkTree {
     padding-block: 1em;
 }
 
+#emailModular{
+    display: block;
+}
+
 .links i {
     font-size: 2.5em;
 }
+
+
 
 .links h3 {
     margin-block: 0;
