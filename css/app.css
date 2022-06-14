@@ -4,11 +4,26 @@
 
 html {
     font-size: 12px;
-    font-family: system-ui, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     height: 100%;
     width: 100%;
 }
 
+#usedChart{
+    background: rgb(249, 129, 139);
+}
+#usedNode{
+    background: rgb(100, 188, 97);
+}
+#usedExpress{
+    background: rgb(129, 173, 249);
+}
+#usedAPI{
+    background: rgb(129, 249, 129);
+}
+#usedHeroku{
+    background: rgb(177, 129, 249);
+}
 
 body, .fullScreenOverlay {
     width: 100%;
