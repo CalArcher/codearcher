@@ -396,6 +396,66 @@ main, .linkTree {
     background: rgba(0,0,0,.1);
 }
 
+.hamburger{
+    display: none;
+}
+
+#hamburgerIcon {
+    display: none;
+    margin-right: 2.4rem;
+    margin-top: 1.7rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-size: 2.7rem;
+    color: black;
+}
+
+@media only screen and (max-width: 575px) {
+    .desktopNav {
+        z-index: 1;
+        padding: 2rem 0;
+        position: fixed;
+        opacity: 0;
+        top: 7rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .desktopNav.active {
+        opacity: 1;
+    }
+
+    .desktopNav li {
+        padding-top: .5rem;
+        margin: 2.5rem 0;
+    }
+    #hamburgerIcon {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
 
 /*#linkTreeModal {*/
 /*    display: none;*/

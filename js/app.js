@@ -1,3 +1,22 @@
+const hamburger = document.querySelector("#hamburgerIcon");
+const navMenu = document.querySelector(".desktopNav");
+const navItems = document.querySelectorAll(".navItems").forEach(item => {
+    item.addEventListener('click', hideMenu)
+})
+
+hamburger.addEventListener("click", mobileMenu);
+
+function hideMenu() {
+    hamburger.classList.toggle("active")
+    navMenu.classList.toggle("active");
+    
+}
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
 HTMLElement.prototype.delegate = function (eventName, childSelector, callback) {
     this.addEventListener(eventName, function (e) {
         const currentElement = e.target.closest(childSelector);
