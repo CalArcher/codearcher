@@ -1,15 +1,20 @@
 const hamburger = document.querySelector("#hamburgerIcon");
 const navMenu = document.querySelector(".desktopNav");
+const modalOverlay = document.querySelector('#modalOverlay')
 const navItems = document.querySelectorAll(".navItems").forEach(item => {
     item.addEventListener('click', hideMenu)
 })
 
 hamburger.addEventListener("click", mobileMenu);
+modalOverlay.addEventListener('click', hideModal)
+
+function hideModal() {
+    document.querySelector("#linkTreeModal").style.display = "none";
+}
 
 function hideMenu() {
     hamburger.classList.toggle("active")
     navMenu.classList.toggle("active");
-    
 }
 
 function mobileMenu() {
