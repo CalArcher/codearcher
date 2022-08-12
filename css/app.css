@@ -9,19 +9,25 @@ html {
     width: 100%;
 }
 
-#usedChart{
+.projectTags .usedChart{
     background: rgb(249, 129, 139);
 }
-#usedNode{
+.projectTags .usedReact{
+    background: rgb(28, 206, 245);
+}
+.projectTags .usedMongo{
+    background: rgb(80, 161, 65);
+}
+.projectTags .usedNode{
     background: rgb(100, 188, 97);
 }
-#usedExpress{
-    background: rgb(129, 173, 249);
+.projectTags .usedExpress{
+    background: rgb(150, 150, 150);
 }
-#usedAPI{
+.projectTags .usedAPI{
     background: rgb(129, 249, 129);
 }
-#usedHeroku{
+.projectTags .usedHeroku{
     background: rgb(177, 129, 249);
 }
 
@@ -311,7 +317,7 @@ main, .linkTree {
     object-fit: contain;
     object-position: center;
     border-radius: 0.5rem;
-    max-width: 5rem;
+    max-width: 3.5rem;
     margin-block: 0;
 }
 
@@ -487,7 +493,7 @@ main, .linkTree {
 
 @media only all and (min-width: 800px) {
     body, .fullScreenOverlay {
-        padding: .25rem;
+        padding: .6rem;
     }
     #logo{
         width: 120px;
@@ -524,7 +530,7 @@ main, .linkTree {
     }
 
     .proficiencyList {
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(6, 1fr);
     }
 
 }
