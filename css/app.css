@@ -317,7 +317,7 @@ main, .linkTree {
     object-fit: contain;
     object-position: center;
     border-radius: 0.5rem;
-    max-width: 3.5rem;
+    max-width: 2.5rem;
     margin-block: 0;
 }
 
@@ -360,6 +360,21 @@ main, .linkTree {
 #aiParent:hover{ box-shadow: 0 0 0 3px rgb(253, 112, 38); }
 #aiSkill{ visibility: hidden; } 
 
+#expressParent:hover ~ #expressSkill{ visibility: visible; }
+#expressParent:hover{ box-shadow: 0 0 0 3px rgb(160, 160, 160); }
+#expressSkill{ visibility: hidden; } 
+
+#reactParent:hover ~ #reactSkill{ visibility: visible; }
+#reactParent:hover{ box-shadow: 0 0 0 3px rgb(91, 215, 248); }
+#reactSkill{ visibility: hidden; } 
+
+#chartParent:hover ~ #chartSkill{ visibility: visible; }
+#chartParent:hover{ box-shadow: 0 0 0 3px rgb(245, 115, 129); }
+#chartSkill{ visibility: hidden; } 
+
+#figmaParent:hover ~ #figmaSkill{ visibility: visible; }
+#figmaParent:hover{ box-shadow: 0 0 0 3px rgb(28, 28, 28); }
+#figmaSkill{ visibility: hidden; } 
 
 .links .modularCard a {
     display: flex;
@@ -532,7 +547,6 @@ main, .linkTree {
     .proficiencyList {
         grid-template-columns: repeat(6, 1fr);
     }
-
 }
 
 @media only all and (min-width: 1024px) {
