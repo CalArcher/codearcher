@@ -78,7 +78,7 @@ h2 {
 
 main h2 {
     font-size: 1.75rem;
-    padding-top: 1.5rem;
+    padding: .5rem 0 .25rem 0;
 }
 
 a {
