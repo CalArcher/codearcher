@@ -41,71 +41,56 @@ body, .fullScreenOverlay {
     justify-content: center;
     align-items: center;
 }
-
 body{
     flex-direction: column;
 }
-
 .fullScreenOverlay {
     background: #0002;
 }
-
-
-
 button, input {
     font: inherit;
     cursor: pointer;
 }
-
 img {
     display: block;
     width: 100%;
 }
-
 ul {
     padding-left: 0;
     list-style-type: none;
     margin-block: 1rem;
 }
-
 h1 {
     font-size: 2rem;
 }
-
 h2 {
     margin-block: 1rem;
 }
-
 main h2 {
     font-size: 1.75rem;
     padding: .5rem 0 .25rem 0;
 }
-
 a {
     color: inherit;
     text-decoration: none;
     display: inline-block;
 }
-
 a:visited {
     color: inherit;
 }
-
 main, .linkTree {
     width: 100%;
     height: 100%;
-    max-width: 74rem;
+    /* max-width: 78rem; */
     border-radius: 1rem;
     padding: 1rem;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
-
 .linkTree {
     width: unset;
     height: unset;
 }
-
 #header{
     margin-top: .75rem;
     margin-bottom: .75rem;
@@ -115,12 +100,10 @@ main, .linkTree {
     flex-direction: row;
     justify-content: space-between;
 }
-
 #logo{
     width: 102px;
     height: 90px;
 }
-
 .desktopNav {
     display: flex;
     align-items: center;
@@ -128,11 +111,9 @@ main, .linkTree {
     justify-content: flex-end;
     flex-flow: row wrap;
 }
-
 .desktopNav a {
     padding: 0.75rem;
 }
-
 .desktopNav a:hover{
     display: block;
     line-height: 1.2em;
@@ -142,7 +123,6 @@ main, .linkTree {
     background-clip: text;
     -webkit-background-clip: text;
 }
-
 .actionButton {
     margin-right: .75rem;
     padding: .45rem 0;
@@ -158,13 +138,11 @@ main, .linkTree {
     border-color: #25baff;
     border-width: 5px;
 }
-
 #emailButton{
     padding: 0;
     font-size: 1.35em;
     margin-top: 2rem;
 }
-
 #emailButton:hover{
     line-height: 1.2em;
     font-size: 1.35em;
@@ -188,14 +166,12 @@ main, .linkTree {
     object-fit: cover;
     object-position: center;
 }
-
 .mainBanner {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
 .rotatingTextOuter {
     height: 1.2em;
     font-size: 1.2em;
@@ -205,7 +181,6 @@ main, .linkTree {
     width: 100%;
     /*overflow-x: visible;*/
 }
-
 .rotatingTextOverlay {
     font-size: 1em;
     position: absolute;
@@ -213,29 +188,24 @@ main, .linkTree {
     left: 50%;
     transform: translateX(-50%);
 }
-
 .modularCard {
     padding-inline: 1em;
     border-radius: 1em;
     overflow: hidden;
 }
-
 @media only screen and (max-width: 600px) {
     .modularCard {
         border-radius: 15px;
     }
 }
-
 .modularCard.withLinks {
     padding-inline: 0;
     transition: transform 0.1s ease-in-out, filter 0.1s ease-in-out;
 }
-
 .modularCard.withLinks:hover {
     transform: scale(1.03);
     filter: brightness(1.05);
 }
-
 .modularCard.withLinks > a {
     /* A rather cool hack. If you don't do something special, it's just display block with no collapse.*/
     display: table;
@@ -243,27 +213,21 @@ main, .linkTree {
     width: 100%;
     height: 100%;
 }
-
 .modularCard h3 {
     margin-block: 1em;
 }
-
 .modularCard ul {
     margin-block: 1em;
 }
-
 .modularCard img {
     width: 100%;
     margin-block: 1em;
     border-radius: 1em;
 }
-
-
 .servicesList, .projectList, .proficiencyList, .cssArtList, .illustrationList, .links {
     display: grid;
     grid-gap: 1rem;
 }
-
 .servicesList img {
     width: 40%;
     display: block;
@@ -271,7 +235,6 @@ main, .linkTree {
     max-width: 5rem;
     /*margin-inline: auto;*/
 }
-
 .projectTags {
     display: flex;
     gap: 0.5em;
@@ -283,8 +246,6 @@ main, .linkTree {
     padding: 0.5em;
     border-radius: 0.5em;
 }
-
-
 .rotatingTextInner {
     display: block;
     line-height: 1.2em;
@@ -294,7 +255,6 @@ main, .linkTree {
     background-clip: text;
     -webkit-background-clip: text;
 }
-
 .proficiencyCard {
     display: flex;
     align-items: center;
@@ -304,13 +264,11 @@ main, .linkTree {
     width: 100%;
     aspect-ratio: 1/1;
 }
-
 .proficiencyList {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
 }
-
 .proficiencyCard img {
     width: 100%;
     height: 100%;
@@ -320,7 +278,6 @@ main, .linkTree {
     max-width: 2.5rem;
     margin-block: 0;
 }
-
 .liCont span{
     padding-top: .65rem;
     display: flex;
@@ -391,20 +348,15 @@ main, .linkTree {
 .links i {
     font-size: 2.5em;
 }
-
-
-
 .links h3 {
     margin-block: 0;
 }
-
 .modalNavbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     column-gap: 1.5em;
 }
-
 .modalNavbar i {
     font-size: 2em;
     cursor: pointer;
@@ -412,15 +364,9 @@ main, .linkTree {
     position: relative;
     left: 0.25em;
 }
-
-/* #linkTreeModal{
-    background: rgba(0,0,0,.3);
-} */
-
 .hamburger{
     display: none;
 }
-
 #hamburgerIcon {
     display: none;
     margin-right: 2.4rem;
@@ -430,7 +376,6 @@ main, .linkTree {
     font-size: 2.7rem;
     color: black;
 }
-
 @media only screen and (max-width: 575px) {
     .desktopNav {
         z-index: 1;
@@ -465,7 +410,6 @@ main, .linkTree {
     position: fixed;
     z-index: 50;
 }
-
 #modalOverlay{
     z-index: 45;
     position: fixed;
@@ -473,7 +417,6 @@ main, .linkTree {
     height: 100%;
     background: rgba(0,0,0,0.3);
 }
-
 @media only screen and (max-width: 396px) {
     .desktopNav{
         display: flex;
@@ -498,14 +441,11 @@ main, .linkTree {
         font-size: 16px;
     }
 }
-
 @media only all and (min-width: 640px) {
     .servicesList, .projectList, .cssArtList, .illustrationList {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-
 @media only all and (min-width: 800px) {
     body, .fullScreenOverlay {
         padding: .6rem;
@@ -562,7 +502,6 @@ main, .linkTree {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
 
 @media only all and (min-width: 1200px) {
     html {
