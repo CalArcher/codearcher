@@ -96,6 +96,10 @@ main,
   width: unset;
   height: unset;
 }
+#resume {
+  color: #25a8ff;
+}
+
 #header {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
