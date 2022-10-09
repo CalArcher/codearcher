@@ -1,187 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/calFavicon.png">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/bonus.css">
-    <link rel="stylesheet" href="css/config.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="icon" href="img/calFavicon.png" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/bonus.css" />
+    <link rel="stylesheet" href="css/config.css" />
     <title>Cal Archer's Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-        <img id='logo' src="img/logo.png" alt="My logo">
-        <nav class="desktopNav">
-            <a class="navItems" href="#services">Services</a>
-            <a class="navItems" href="#skills">Skills</a>
-            <a class="navItems" href="#projects">Projects</a>
-            <button class="navItems actionButton" id="connect">Let's Connect!</button>
-        </nav>
-        <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
+      <img id="logo" src="img/logo.png" alt="My logo" />
+      <nav class="desktopNav">
+        <a class="navItems" href="#services">Services</a>
+        <a class="navItems" href="#skills">Skills</a>
+        <a class="navItems" href="#projects">Projects</a>
+        <button class="navItems actionButton" id="connect">Let's Connect!</button>
+      </nav>
+      <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
     </header>
-<main class="glassMorphism">
-    <section class="mainBanner">
+    <main class="glassMorphism">
+      <section class="mainBanner">
         <div class="mainIconContainer">
-            <!--PFP needs to be 1:1-->
-            <img class="mainIcon" src="img/icon.jpg" alt="headshot of Cal">
-            <span class="mainTextBox"></span>
+          <!--PFP needs to be 1:1-->
+          <img class="mainIcon" src="img/icon.jpg" alt="headshot of Cal" />
+          <span class="mainTextBox"></span>
         </div>
         <div class="mainText">
-            <h1>
-                <span>Hi</span>! I'm Cal Archer, a
-                <strong class="rotatingTextOuter">
-                    <!-- The overlay is a dummy. Will remain "software engineer" if JavaScript is disabled.-->
-                    <span class="rotatingTextOverlay"><span
-                            class="rotatingTextInner">Software Engineer.</span>
-                    </span>
-                </strong>
-            </h1>
-            <!--about me-->
-            <p>I am currently working as a freelance web developer who specializes in designing and creating small business websites. I would love to help your vision come to life, or help you plan your personal or business website from scratch. 
-            <br>
-            <br>
-            Take a peek at my recent work, and if you are interested in my services, please reach out!</p>
-           
+          <h1>
+            <span>Hi</span>
+            ! I'm Cal Archer, a
+            <strong class="rotatingTextOuter">
+              <!-- The overlay is a dummy. Will remain "software engineer" if JavaScript is disabled.-->
+              <span class="rotatingTextOverlay"><span class="rotatingTextInner">Software Engineer.</span></span>
+            </strong>
+          </h1>
+          <!--about me-->
+          <p>
+            I am currently working as a freelance web developer who specializes in designing and creating small business websites. I would
+            love to help your vision come to life, or help you plan your personal or business website from scratch.
+            <br />
+            <br />
+            Take a peek at my recent work or my
+            <a href="img/CALARCHER_resume2022.pdf" target="_blank">resume</a>
+            , and if you are interested in my services, please reach out!
+          </p>
         </div>
-    </section>
-    <section id="skills">
+      </section>
+      <section id="skills">
         <h2>My Skills</h2>
         <ul class="proficiencyList">
-            <!--Skills list. Currently scales for multiples of 8-->
-            <div class="liCont">
-                <li id="htmlParent" class="modularCard glassMorphism proficiencyCard">
-                    <img src="img/proficiencyIcons/HTML5.svg" alt="HTML">
-                </li>
-                <span class='skillsC'id="htmlSkill">HTML</span>
-            </div>
-            <div class="liCont">
-                <li id="cssParent" class="modularCard glassMorphism proficiencyCard">
-                    <img src="img/proficiencyIcons/CSS.svg" alt="CSS">
-                </li>
-                <span class='skillsC'id="cssSkill">CSS</span>
-            </div>
-            <div class="liCont">
-                <li id="jsParent" class="modularCard glassMorphism proficiencyCard">
-                    <img src="img/proficiencyIcons/JS.svg" alt="JavaScript">
-                </li>
-                <span class='skillsC'id="jsSkill">JavaScript</span>
-            </div>
-            <div class="liCont">
-                <li id="nodejsParent" class="modularCard glassMorphism proficiencyCard">
-                    <img src="img/proficiencyIcons/nodejs.svg" alt="nodejs">
-                </li>
-                <span class='skillsC'id="nodejsSkill">Node.js</span>
-            </div>
-            <div class="liCont">
-                <li id="mongodbParent" class="modularCard glassMorphism proficiencyCard">
-                    <img src="img/proficiencyIcons/mongodb.svg" alt="mongodb">
-                </li>
-                <span class='skillsC'id="mongodbSkill">MongoDB</span>
-            </div>
-            <div class="liCont">
-                <li id="expressParent" class="modularCard glassMorphism proficiencyCard">
-                    <img src="img/proficiencyIcons/express.svg" alt="express">
-                </li>
-                <span class='skillsC'id="expressSkill">Express</span>
-            </div>
-            <div class="liCont">
-                <li id="reactParent" class="modularCard glassMorphism proficiencyCard">
-                    <img src="img/proficiencyIcons/react.svg" alt="react">
-                </li>
-                <span class='skillsC'id="reactSkill">React</span>
-            </div>
-            <div class="liCont">
-                <li id="chartParent" class="modularCard glassMorphism proficiencyCard">
-                    <img src="img/proficiencyIcons/chartjs.svg" alt="mongodb">
-                </li>
-                <span class='skillsC'id="chartSkill">Chart.js</span>
-            </div>
-            <div class="liCont">
-                <li id="gitParent" class="modularCard glassMorphism proficiencyCard">
-                    <img src="img/proficiencyIcons/gitLogo.svg" alt="git">
-                </li>
-                <span class="skillsC" id="gitSkill">Git</span>
-            </div>
-            <div class="liCont">
-                <li id="npmParent" class="modularCard glassMorphism proficiencyCard">
-                    <img src="img/proficiencyIcons/npm.svg" alt="npm">
-                </li>
-                <span class='skillsC'id="npmSkill">npm</span>
-            </div>
-            <div class="liCont">
-                <li id="aiParent" class="modularCard glassMorphism proficiencyCard">
-                    <img src="img/proficiencyIcons/illustrator.svg" alt="illustrator">
-                </li>
-                <span class='skillsC'id="aiSkill">Illustrator</span>
-            </div>
-            <div class="liCont">
-                <li id="figmaParent" class="modularCard glassMorphism proficiencyCard">
-                    <img src="img/proficiencyIcons/figma.svg" alt="figma">
-                </li>
-                <span class='skillsC'id="figmaSkill">Figma</span>
-            </div>
+          <!--Skills list. Currently scales for multiples of 8-->
+          <div class="liCont">
+            <li id="htmlParent" class="modularCard glassMorphism proficiencyCard">
+              <img src="img/proficiencyIcons/HTML5.svg" alt="HTML" />
+            </li>
+            <span class="skillsC" id="htmlSkill">HTML</span>
+          </div>
+          <div class="liCont">
+            <li id="cssParent" class="modularCard glassMorphism proficiencyCard">
+              <img src="img/proficiencyIcons/CSS.svg" alt="CSS" />
+            </li>
+            <span class="skillsC" id="cssSkill">CSS</span>
+          </div>
+          <div class="liCont">
+            <li id="jsParent" class="modularCard glassMorphism proficiencyCard">
+              <img src="img/proficiencyIcons/JS.svg" alt="JavaScript" />
+            </li>
+            <span class="skillsC" id="jsSkill">JavaScript</span>
+          </div>
+          <div class="liCont">
+            <li id="nodejsParent" class="modularCard glassMorphism proficiencyCard">
+              <img src="img/proficiencyIcons/nodejs.svg" alt="nodejs" />
+            </li>
+            <span class="skillsC" id="nodejsSkill">Node.js</span>
+          </div>
+          <div class="liCont">
+            <li id="mongodbParent" class="modularCard glassMorphism proficiencyCard">
+              <img src="img/proficiencyIcons/mongodb.svg" alt="mongodb" />
+            </li>
+            <span class="skillsC" id="mongodbSkill">MongoDB</span>
+          </div>
+          <div class="liCont">
+            <li id="expressParent" class="modularCard glassMorphism proficiencyCard">
+              <img src="img/proficiencyIcons/express.svg" alt="express" />
+            </li>
+            <span class="skillsC" id="expressSkill">Express</span>
+          </div>
+          <div class="liCont">
+            <li id="reactParent" class="modularCard glassMorphism proficiencyCard">
+              <img src="img/proficiencyIcons/react.svg" alt="react" />
+            </li>
+            <span class="skillsC" id="reactSkill">React</span>
+          </div>
+          <div class="liCont">
+            <li id="chartParent" class="modularCard glassMorphism proficiencyCard">
+              <img src="img/proficiencyIcons/chartjs.svg" alt="mongodb" />
+            </li>
+            <span class="skillsC" id="chartSkill">Chart.js</span>
+          </div>
+          <div class="liCont">
+            <li id="gitParent" class="modularCard glassMorphism proficiencyCard">
+              <img src="img/proficiencyIcons/gitLogo.svg" alt="git" />
+            </li>
+            <span class="skillsC" id="gitSkill">Git</span>
+          </div>
+          <div class="liCont">
+            <li id="npmParent" class="modularCard glassMorphism proficiencyCard">
+              <img src="img/proficiencyIcons/npm.svg" alt="npm" />
+            </li>
+            <span class="skillsC" id="npmSkill">npm</span>
+          </div>
+          <div class="liCont">
+            <li id="aiParent" class="modularCard glassMorphism proficiencyCard">
+              <img src="img/proficiencyIcons/illustrator.svg" alt="illustrator" />
+            </li>
+            <span class="skillsC" id="aiSkill">Illustrator</span>
+          </div>
+          <div class="liCont">
+            <li id="figmaParent" class="modularCard glassMorphism proficiencyCard">
+              <img src="img/proficiencyIcons/figma.svg" alt="figma" />
+            </li>
+            <span class="skillsC" id="figmaSkill">Figma</span>
+          </div>
         </ul>
-    </section>
-    <section id="projects">
+      </section>
+      <section id="projects">
         <h2>Recent Projects</h2>
         <ul class="projectList">
-            <!--scales for multiples of 6-->
-            <li class="modularCard withLinks glassMorphism">
-                <a href="https://top-coin.herokuapp.com/" target="_blank">
-                    <img src="img/websites/topCoinDemo.gif" alt="Top Coin Website Demo Gif">
-                    <h3>Top Coin</h3>
-                    <p>Top Coin is a cryptocurrency tracking app. Each day it logs the top 10 performing coins and shows a chart of each time that particular coin has been in the top 10 performing coins of the day. This project took over 200 hours to create and utilizes MongoDB, Express, React, and Node.</p>
-                    <ul class="projectTags">
-                        <li class="glassMorphism">HTML</li>
-                        <li class="glassMorphism">CSS</li>
-                        <li class="glassMorphism">JavaScript</li>
-                        <li class="usedApi glassMorphism">REST APIs</li>
-                        <li class="usedMongo glassMorphism">MongoDB</li>
-                        <li class="usedExpress glassMorphism">Express</li>
-                        <li class="usedReact glassMorphism">React</li>
-                        <li class="usedNode glassMorphism">Node</li>
-                        <li class="usedChart glassMorphism">Chart.js</li>
-                    </ul>
-                </a>
-            </li>
-            <li class="modularCard withLinks glassMorphism">
-                <a href="https://iss-data.netlify.app/">
-                    <img src="img/websites/issDemo.png" alt="picture of the Volcano Alert website">
-                    <h3>I.S.S. Volcano Alert</h3>
-                    <p>This is one of my 100 hour projects. It sends a tweet to an astronaut aboard the International Space Station every time it  passes over a volcano. The website displays data from the simple JSON API I built for this project.</p>
-                    <ul class="projectTags">
-                        <li class="glassMorphism">HTML</li>
-                        <li class="glassMorphism">CSS</li>
-                        <li class="glassMorphism">JavaScript</li>
-                        <li class="usedNode glassMorphism">Node</li>
-                        <li class="usedExpress glassMorphism">Express</li>
-                        <li class="usedChart glassMorphism">Chart.js</li>
-                        <li class="usedAPI glassMorphism">API</li>
-                        <li class="usedHeroku glassMorphism">Heroku</li>
-                    </ul>
-                </a>
-            </li>
-            <li class="modularCard withLinks glassMorphism">
-                <a href="https://embergrill.netlify.app/">
-                    <img src="img/websites/emberDemo.gif" alt="demo of ember grill website">
-                    <h3>Ember Grill</h3>
-                    <p>A fully responsive, simple, and modern website for Ember Grill, a Restaurant & Steakhouse</p>
-                    <ul class="projectTags">
-                        <li class="glassMorphism">HTML</li>
-                        <li class="glassMorphism">CSS</li>
-                        <li class="glassMorphism">JavaScript</li>
-                    </ul>
-                </a>
-            </li>
-          
-            <!-- <li class="modularCard withLinks glassMorphism">
+          <!--scales for multiples of 6-->
+          <li class="modularCard withLinks glassMorphism">
+            <a href="https://top-coin.herokuapp.com/" target="_blank">
+              <img src="img/websites/topCoinDemo.gif" alt="Top Coin Website Demo Gif" />
+              <h3>Top Coin</h3>
+              <p>
+                Top Coin is a cryptocurrency tracking app. Each day it logs the top 10 performing coins and shows a chart of each time that
+                particular coin has been in the top 10 performing coins of the day. This project took over 200 hours to create and utilizes
+                MongoDB, Express, React, and Node.
+              </p>
+              <ul class="projectTags">
+                <li class="glassMorphism">HTML</li>
+                <li class="glassMorphism">CSS</li>
+                <li class="glassMorphism">JavaScript</li>
+                <li class="usedApi glassMorphism">REST APIs</li>
+                <li class="usedMongo glassMorphism">MongoDB</li>
+                <li class="usedExpress glassMorphism">Express</li>
+                <li class="usedReact glassMorphism">React</li>
+                <li class="usedNode glassMorphism">Node</li>
+                <li class="usedChart glassMorphism">Chart.js</li>
+              </ul>
+            </a>
+          </li>
+          <li class="modularCard withLinks glassMorphism">
+            <a href="https://iss-data.netlify.app/">
+              <img src="img/websites/issDemo.png" alt="picture of the Volcano Alert website" />
+              <h3>I.S.S. Volcano Alert</h3>
+              <p>
+                This is one of my 100 hour projects. It sends a tweet to an astronaut aboard the International Space Station every time it
+                passes over a volcano. The website displays data from the simple JSON API I built for this project.
+              </p>
+              <ul class="projectTags">
+                <li class="glassMorphism">HTML</li>
+                <li class="glassMorphism">CSS</li>
+                <li class="glassMorphism">JavaScript</li>
+                <li class="usedNode glassMorphism">Node</li>
+                <li class="usedExpress glassMorphism">Express</li>
+                <li class="usedChart glassMorphism">Chart.js</li>
+                <li class="usedAPI glassMorphism">API</li>
+                <li class="usedHeroku glassMorphism">Heroku</li>
+              </ul>
+            </a>
+          </li>
+          <li class="modularCard withLinks glassMorphism">
+            <a href="https://embergrill.netlify.app/">
+              <img src="img/websites/emberDemo.gif" alt="demo of ember grill website" />
+              <h3>Ember Grill</h3>
+              <p>A fully responsive, simple, and modern website for Ember Grill, a Restaurant & Steakhouse</p>
+              <ul class="projectTags">
+                <li class="glassMorphism">HTML</li>
+                <li class="glassMorphism">CSS</li>
+                <li class="glassMorphism">JavaScript</li>
+              </ul>
+            </a>
+          </li>
+
+          <!-- <li class="modularCard withLinks glassMorphism">
                 <a href="#">
                     <img src="img/websites/placeholder.jpg" alt="lorem">
                     <h3>Lorem ipsum dolor.</h3>
@@ -216,78 +225,89 @@
                 </a>
             </li> -->
         </ul>
-    </section>
-    <section id="services">
+      </section>
+      <section id="services">
         <h2>My Services</h2>
         <ul class="servicesList">
-            <li class="modularCard glassMorphism">
-                <img src="img/serviceIcons/WebDevelopment.svg" alt="Web Development">
-                <h3>Website Development</h3>
-                <p>We will work together to plan your ideal website, then leave the rest to me. After your website is finished and you are happy, I will help you deploy your website on your preferred hosting service, or I can recommend my favorite.</p>
-            </li>
-            <li class="modularCard glassMorphism">
-                <img src="img/serviceIcons/ResponsiveWeb.svg" alt="Responsive Design on Multiple Devices">
-                <h3>Responsive Web Design</h3>
-                <p>Today, around 60% of website visits are done from mobile devices. It is <b>essential</b> that your website works on smaller resolutions. I make sure my designs scale properly on all popular screen sizes.</p>
-            </li>
-            <li class="modularCard glassMorphism">
-                <img src="img/serviceIcons/walkingTogether.svg" alt="Illustration">
-                <h3>Walking with you</h3>
-                <p>Communication is key. You will be updated frequently on the progress of your website. After your website is finished, I can help you maintain it longterm if you need to make regular updates.</p>
-            </li>
-            <!-- Icon by svgrepo.com -->
-            <li class="modularCard glassMorphism">
-                <img src="img/serviceIcons/logoDesign.png" alt="adobe illustrator logo">
-                <h3>Logo Design</h3>
-                <p>A logo for your business helps bring a professional touch to your website. I will work with you to create a simple and elegant logo in addition to making your website.</p>
-            </li>
+          <li class="modularCard glassMorphism">
+            <img src="img/serviceIcons/WebDevelopment.svg" alt="Web Development" />
+            <h3>Website Development</h3>
+            <p>
+              We will work together to plan your ideal website, then leave the rest to me. After your website is finished and you are happy,
+              I will help you deploy your website on your preferred hosting service, or I can recommend my favorite.
+            </p>
+          </li>
+          <li class="modularCard glassMorphism">
+            <img src="img/serviceIcons/ResponsiveWeb.svg" alt="Responsive Design on Multiple Devices" />
+            <h3>Responsive Web Design</h3>
+            <p>
+              Today, around 60% of website visits are done from mobile devices. It is
+              <b>essential</b>
+              that your website works on smaller resolutions. I make sure my designs scale properly on all popular screen sizes.
+            </p>
+          </li>
+          <li class="modularCard glassMorphism">
+            <img src="img/serviceIcons/walkingTogether.svg" alt="Illustration" />
+            <h3>Walking with you</h3>
+            <p>
+              Communication is key. You will be updated frequently on the progress of your website. After your website is finished, I can
+              help you maintain it longterm if you need to make regular updates.
+            </p>
+          </li>
+          <!-- Icon by svgrepo.com -->
+          <li class="modularCard glassMorphism">
+            <img src="img/serviceIcons/logoDesign.png" alt="adobe illustrator logo" />
+            <h3>Logo Design</h3>
+            <p>
+              A logo for your business helps bring a professional touch to your website. I will work with you to create a simple and elegant
+              logo in addition to making your website.
+            </p>
+          </li>
         </ul>
-    </section>
-</main>
+      </section>
+    </main>
 
-<!--Contact info-->
-<div class="fullScreenOverlay" id="linkTreeModal" style="display: none">
-    <div id="modalOverlay"></div>
-    <nav class="linkTree glassMorphism">
+    <!--Contact info-->
+    <div class="fullScreenOverlay" id="linkTreeModal" style="display: none">
+      <div id="modalOverlay"></div>
+      <nav class="linkTree glassMorphism">
         <div class="modalNavbar">
-            <h2>Let's connect!</h2>
-            <i class="fa-solid fa-xmark" targetElement="linkTreeModal"></i>
+          <h2>Let's connect!</h2>
+          <i class="fa-solid fa-xmark" targetElement="linkTreeModal"></i>
         </div>
         <ul class="links">
-            <li class="modularCard withLinks glassMorphism">
-                <a href="https://twitter.com/CalArcher_" target="_blank">
-                    <h3>Twitter</h3>
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </li>
-            <li class="modularCard withLinks glassMorphism">
-                <a href="https://www.linkedin.com/in/cal-archer-2b7691225/" target="_blank">
-                    <h3>LinkedIn</h3>
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </li>
-            <li class="modularCard withLinks glassMorphism">
-                <a href="https://github.com/CalArcher/" target="_blank">
-                    <h3>GitHub</h3>
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </li>
-            <li class="modularCard withLinks glassMorphism">
-                <a href="mailto:thecodearcher@gmail.com">
-                    <h3>Email</h3>
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </li>
+          <li class="modularCard withLinks glassMorphism">
+            <a href="https://twitter.com/CalArcher_" target="_blank">
+              <h3>Twitter</h3>
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="modularCard withLinks glassMorphism">
+            <a href="https://www.linkedin.com/in/cal-archer-2b7691225/" target="_blank">
+              <h3>LinkedIn</h3>
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="modularCard withLinks glassMorphism">
+            <a href="https://github.com/CalArcher/" target="_blank">
+              <h3>GitHub</h3>
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li class="modularCard withLinks glassMorphism">
+            <a href="mailto:thecodearcher@gmail.com">
+              <h3>Email</h3>
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
         </ul>
-    </nav>
-</div>
-<footer>
-    
-</footer>
-</body>
-<script src="https://kit.fontawesome.com/bac08de2ab.js" crossorigin="anonymous"></script>
-<script src="js/app.js"></script>
-<script src="js/configRotatingText.js"></script>
-<script src="js/configProjectTagColor.js"></script>
-<script src="js/configInteractivePFPText.js"></script>
+      </nav>
+    </div>
+    <footer></footer>
+  </body>
+  <script src="https://kit.fontawesome.com/bac08de2ab.js" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+  <script src="js/configRotatingText.js"></script>
+  <script src="js/configProjectTagColor.js"></script>
+  <script src="js/configInteractivePFPText.js"></script>
 </html>
